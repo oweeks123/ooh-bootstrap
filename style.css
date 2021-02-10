@@ -1,0 +1,9 @@
+.container_border{
+    border: 1px solid #000000;
+    background-color: #DDDDDD;
+    padding: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12pt;
+    color: #000000;
+    text-align: center;
+}
