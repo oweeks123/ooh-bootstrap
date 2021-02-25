@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">CTM Urgent Primary Care</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</div>
+ 
+<!-- Body -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2">
+            <h3>Articles</h3>
+            <p>Lorem ipsum dolor..</p>
+        </div>
+
+<!-- Red Flags -->
+
+        <div class="col-sm-8 border">
+            <h3>Red Flags</h3>
+
+<!-- Accordion -->
+
+            <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h5>Headache</h5>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <!-- Headache -->
+                        
+                        <form action="action_page.php" method="post">
+                            <input type="checkbox" id="red1" name="red1" value="red1">
+                            <label for="red1">Sudden severe pain or "worst headache ever".</label><br>
+                            <input type="checkbox" id="red2" name="red2" value="red2">
+                            <label for="red2">Sudden onset of weakness or numbness on one side of the body.</label><br>
+                            <input type="checkbox" id="red3" name="red3" value="red3">
+                            <label for="red3">Confusion, altered consciousness, behaving differently.</label><br>
+                            <input type="checkbox" id="red4" name="red4" value="red4">
+                            <label for="red4">Slurred speech, difficulty speaking.</label><br>
+                            <input type="checkbox" id="red5" name="red5" value="red5">
+                            <label for="red5">Stiff neck and fever.</label><br>
+                            <input type="checkbox" id="red6" name="red6" value="red6">
+                            <label for="red6">Child diabetes and high blood sugar.</label><br>
+                            <input type="checkbox" id="red7" name="red7" value="red7">
+                            <label for="red7">Persistent vomiting.</label><br>
+                            <input type="checkbox" id="red8" name="red2" value="red8">
+                            <label for="red8">Blurred / double vision.</label><br>
+                            <input type="checkbox" id="red9" name="red9" value="red9">
+                            <label for="red9">Feeling lightheaded.</label><br>
+                            <input type="checkbox" id="red10" name="red10" value="red10">
+                            <label for="red10">Fever.</label><br>
+                            <input type="checkbox" id="red11" name="red11" value="red11">
+                            <label for="red11">Non-blanching rash.</label><br>
+                            <input type="checkbox" id="red12" name="red12" value="red12">
+                            <label for="red12">Headache with painful red eye.</label><br>
+                            <input type="checkbox" id="red13" name="red13" value="red13">
+                            <label for="red13">Temporal headache, age >50.</label><br><br>
+                            <input type="submit" value="Submit">
+                        </form>
+                        
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Collapsible Group Item #2
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Collapsible Group Item #3
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+<!-- Documents -->        
+
+        <div class="col-sm-2">
+            <h3>Documents</h3>
+            <p>Lorem ipsum dolor..</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
